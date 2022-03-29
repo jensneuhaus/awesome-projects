@@ -58,4 +58,9 @@ huey = RedisHuey('my-app', host='redis.myapp.com')
 @huey.task()
 def add_numbers(a, b):
     return a + b
+    
+    
+# In shell
+res = add_numbers(1, 2)
+<Result: task 6b6f36fc-da0d-4069-b46c-c0d4ccff1df6>
 ```
